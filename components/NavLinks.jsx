@@ -20,16 +20,6 @@ const links = [
 const NavLinks = ({ containerStyles = '', downloadButton }) => {
   const pathname = usePathname();
 
-  console.log('Current pathname:', pathname);
-  console.log('Pathname type:', typeof pathname);
-  console.log('Pathname length:', pathname?.length);
-  console.log('Is exactly root?:', pathname === '/');
-  console.log('Download button prop:', downloadButton);
-  console.log(
-    'Should show download button?:',
-    downloadButton && pathname !== '/'
-  );
-
   return (
     <div className="flex flex-col justify-between h-full">
       <div className={cn(containerStyles)}>
