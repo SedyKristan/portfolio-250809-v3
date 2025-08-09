@@ -1,0 +1,85 @@
+/*----------------- Headings ----------------------*/
+
+.h1 {
+  @apply text-[40px] md:text-[52px] lg:text-[56px] leading-[1] tracking-tight font-extrabold;
+}
+
+.h2 {
+  @apply text-[32px] md:text-[36px] lg:text-[38px] leading-[1.15] tracking-tight font-bold;
+}
+
+.h3 {
+  @apply text-[28px] md:text-[30px] lg:text-[32px] leading-[1.2] font-medium;
+}
+
+.h4 {
+  @apply text-[22px] md:text-[26px] leading-snug font-medium;
+}
+
+/*--------------------- Label ---------------------*/
+
+.label-lg-bold {
+  @apply text-lg leading-[31px] font-bold;
+}
+
+.label-lg-regular {
+  @apply text-lg leading-[31px];
+}
+
+.label-md-bold {
+  @apply text-base leading-[31px] font-bold;
+}
+
+.label-md-regular {
+  @apply text-base leading-[31px];
+}
+
+.label-sm-bold {
+  @apply text-sm leading-[24px] font-bold;
+}
+
+.label-sm-regular {
+  @apply text-sm leading-[24px];
+}
+
+.label-xs-bold {
+  @apply text-xs leading-[20px] font-bold;
+}
+
+.label-xs-regular {
+  @apply text-xs leading-[20px];
+}
+
+/*--------------------- Paragraph ----------------------*/
+
+.paragraph-lg-bold {
+  @apply text-lg leading-[31px] font-bold;
+}
+
+.paragraph-lg-regular {
+  @apply text-lg leading-[31px];
+}
+
+.paragraph-md-bold {
+  @apply text-base leading-[28px] font-bold;
+}
+
+.paragraph-md-regular {
+  @apply text-base leading-[28px];
+}
+
+.paragraph-sm-bold {
+  @apply text-sm leading-[24px] font-bold;
+}
+
+.paragraph-sm-regular {
+  @apply text-sm leading-[24px];
+}
+
+.paragraph-xs-bold {
+  @apply text-xs leading-[20px] font-bold;
+}
+
+.paragraph-xs-regular {
+  @apply text-xs leading-[20px];
+}

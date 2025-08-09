@@ -1,0 +1,14 @@
+/* Styles Index - Main Entry Point for All Styles */
+
+/* Base Styles - Foundation layer */
+@import './base/typography.css';
+
+/* Component Styles - Component layer */
+@import './components/button.css';
+
+/* Layout Styles - Layout layer (when you add them) */
+/* @import './layouts/header.css'; */
+/* @import './layouts/footer.css'; */
+
+/* Utility Styles - Utility layer (when you add them) */
+/* @import './utilities/animations.css'; */

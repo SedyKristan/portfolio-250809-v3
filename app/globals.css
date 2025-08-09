@@ -1,26 +1,75 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import './styles/base/typography.css';
+@import './styles/components/button.css';
+@plugin 'tailwind-scrollbar';
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@theme {
+  /* Breakpoints */
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1230px;
+  --breakpoint-2xl: 1520px;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  /* Colors */
+  --color-primary: #f9ce69;
+  --color-primary-dark: #d6a84c;
+  --color-primary-darker: #b38534;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-secondary: #4741a6;
+  --color-secondary-dark: #342f8e;
+  --color-secondary-darker: #342f8e;
+  --color-secondary-darkest: #171460;
+  --color-secondary-darkest-02: #04032e;
+
+  --color-primary-ghost-01: #f9ce6910;
+  --color-primary-ghost-02: #f9ce6920;
+  --color-primary-ghost-03: #f9ce6930;
+  --color-primary-ghost-04: #f9ce6940;
+
+  --color-secondary-ghost-01: #4741a610;
+  --color-secondary-ghost-02: #4741a620;
+  --color-secondary-ghost-03: #4741a630;
+  --color-secondary-ghost-04: #4741a640;
+
+  --color-tertiary-ghost-01: #9bbbfc10;
+  --color-tertiary-ghost-02: #9bbbfc20;
+  --color-tertiary-ghost-03: #9bbbfc30;
+  --color-tertiary-ghost-04: #9bbbfc40;
+
+  --color-surface-primary: #101319;
+  --color-surface-gray: #1f2532;
+  --color-surface-brand: #9bbbfc;
+  --color-surface-overlay: #00000065;
+
+  --color-typography-primary: #ffffff;
+  --color-typography-secondary: #83868c;
+  --color-typography-tertiary: #424b64;
+
+  --color-button-action-default: var(--color-primary);
+  --color-button-action-hover: var(--color-primary-dark);
+  --color-button-action-active: var(--color-primary-darker);
+  --color-button-on-action: var(--color-secondary);
+
+  /* Fonts */
+  --font-primary: 'Open Sans', sans-serif;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply font-primary bg-surface-primary text-typography-primary leading-relaxed;
+}
+
+.container {
+  @apply px-4 md:px-10;
+}
+
+.swiper {
+  margin: 0 !important;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  @apply bg-primary;
 }

@@ -1,0 +1,46 @@
+.button {
+  @apply flex gap-2 items-center justify-center rounded-lg cursor-pointer transition-all duration-300 ease-in-out;
+}
+
+.button--contained {
+  @apply bg-button-action-default hover:bg-button-action-hover active:bg-button-action-active text-button-on-action;
+}
+
+.button--outlined {
+  @apply border border-secondary text-primary hover:bg-tertiary-ghost-01 active:bg-tertiary-ghost-02;
+}
+
+.button--text {
+  @apply text-primary hover:bg-tertiary-ghost-01 active:bg-tertiary-ghost-02;
+}
+
+.button--lg {
+  @apply h-[56px] px-8;
+}
+
+.button--md {
+  @apply h-[40px] px-6;
+}
+
+.button--sm {
+  @apply h-[32px] px-4;
+}
+.icon-button--outlined {
+  @apply border border-secondary text-primary hover:bg-tertiary-ghost-01 active:bg-tertiary-ghost-02;
+}
+
+.icon-button--text {
+  @apply text-primary hover:bg-tertiary-ghost-01 active:bg-tertiary-ghost-02;
+}
+
+.icon-button--lg {
+  @apply h-14 w-14;
+}
+
+.icon-button--md {
+  @apply h-10 w-10;
+}
+
+.icon-button--sm {
+  @apply h-8 w-8;
+}
