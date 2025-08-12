@@ -18,12 +18,17 @@ const DownloadButton = ({ className = '' }) => {
         href={'/[Resume]Sedy-Kristan-Ribaya.pdf'}
         download="Sedy-Kristan-Ribaya-Resume.pdf"
       >
-        <Button variant="contained" size="lg">
+        <Button variant="contained" size="lg" className="w-full">
           <MdFileDownload />
           Download Resume
         </Button>
       </a>
-      <Button onClick={handlePreview} variant="outlined" size="lg">
+      <Button
+        onClick={handlePreview}
+        variant="outlined"
+        size="lg"
+        className="w-full md:w-auto"
+      >
         <MdVisibility />
         View Resume
       </Button>
